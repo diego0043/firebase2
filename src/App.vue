@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Listado></Listado>
+  <div>
+    <v-container>
+      <v-row>
+        <v-col cols="6">
+          <fotos></fotos>
+        </v-col>
+
+       
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-import Listado from './components/Listado.vue'
+import Fotos from "./components/Fotos.vue";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    Listado
-  }
-}
+    Fotos,
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>
